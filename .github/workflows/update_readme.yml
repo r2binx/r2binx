@@ -3,6 +3,7 @@ name: Update README
 on:
     schedule:
         - cron: "0 8 * * 6"
+    workflow_dispatch:
 
 jobs:
     build:
@@ -13,12 +14,12 @@ jobs:
               uses: actions/checkout@v3
             - name: Fetch latest stats
               run: |
-                  curl "https://github-readme-stats.vercel.app/api?username=r2binx&show_icons=true&count_private=true&custom_title=Robin's%20GitHub%20Stats&hide_border=true&theme=buefy" > stats_light.svg
-                  curl "https://github-readme-stats.vercel.app/api?username=r2binx&show_icons=true&count_private=true&custom_title=Robin's%20GitHub%20Stats&hide_border=true&theme=nightowl" > stats_dark.svg
+                  curl "https://github-readme-stats.vercel.app/api?username=r2binx&show_icons=true&count_private=true&custom_title=Robin's%20GitHub%20Stats&hide_border=true&theme=buefy" > img/stats_light.svg
+                  curl "https://github-readme-stats.vercel.app/api?username=r2binx&show_icons=true&count_private=true&custom_title=Robin's%20GitHub%20Stats&hide_border=true&theme=nightowl" > img/stats_dark.svg
             - name: Fetch most used langs
               run: |
-                  curl "https://github-readme-stats.vercel.app/api/top-langs/?username=r2binx&layout=compact&hide=css&hide_border=true&theme=buefy" > langs_light.svg
-                  curl "https://github-readme-stats.vercel.app/api/top-langs/?username=r2binx&layout=compact&hide=css&hide_border=true&theme=nightowl" > langs_dark.svg
+                  curl "https://github-readme-stats.vercel.app/api/top-langs/?username=r2binx&layout=compact&hide=css&hide_border=true&theme=buefy" > img/langs_light.svg
+                  curl "https://github-readme-stats.vercel.app/api/top-langs/?username=r2binx&layout=compact&hide=css&hide_border=true&theme=nightowl" > img/langs_dark.svg
             - name: Commit to repo
               run: |
                   git config --global user.name "github-actions[bot]"
