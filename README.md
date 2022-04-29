@@ -1,16 +1,27 @@
-### Hi there 👋
+### :wave: Hi there, I'm Robin
 
-<!--
-**r2binx/r2binx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+#### :eyes: About me
 
-Here are some ideas to get you started:
+- 👨‍🎓 I'm a CS student at Stuttgart Media University
+- 🌱 I’m currently learning about cloud development & Go
+- 🐧 I love open source
+- 🤓 VIM is my favorite _text editor_ but I wouldn't use it as an IDE
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+#### :mailbox: How to reach me?
+- :email: [robin@blckct.io](mailto:robin@blckct.io)
+- :office: [LinkedIn](linkedin.com/in/robinhaerle)
+
+
+<br>
+
+<p align="center">
+
+<img align="top" width="55%" src="img/stats_light.svg#gh-light-mode-only">
+
+<img align="top" width="40%" src="img/langs_light.svg#gh-light-mode-only">
+
+<img align="top" width="55%" src="img/stats_dark.svg#gh-dark-mode-only">
+
+<img align="top" width="40%" src="img/langs_dark.svg#gh-dark-mode-only">
+
+</p>

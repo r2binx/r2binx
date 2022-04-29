@@ -1,0 +1,27 @@
+name: Update README
+
+on:
+    schedule:
+        - cron: "0 8 * * 6"
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        name: Refresh README stats
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v3
+            - name: Fetch latest stats
+              run: |
+                  curl "https://github-readme-stats.vercel.app/api?username=r2binx&show_icons=true&count_private=true&custom_title=Robin's%20GitHub%20Stats&hide_border=true&theme=buefy" > stats_light.svg
+                  curl "https://github-readme-stats.vercel.app/api?username=r2binx&show_icons=true&count_private=true&custom_title=Robin's%20GitHub%20Stats&hide_border=true&theme=nightowl" > stats_dark.svg
+            - name: Fetch most used langs
+              run: |
+                  curl "https://github-readme-stats.vercel.app/api/top-langs/?username=r2binx&layout=compact&hide=css&hide_border=true&theme=buefy" > langs_light.svg
+                  curl "https://github-readme-stats.vercel.app/api/top-langs/?username=r2binx&layout=compact&hide=css&hide_border=true&theme=nightowl" > langs_dark.svg
+            - name: Commit to repo
+              run: |
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git commit -am "Update README.md"
+                  git push origin main
