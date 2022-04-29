@@ -9,7 +9,7 @@
 
 #### :mailbox: How to reach me?
 - :email: [robin@blckct.io](mailto:robin@blckct.io)
-- :office: [LinkedIn](linkedin.com/in/robinhaerle)
+- :office: [LinkedIn](https://linkedin.com/in/robinhaerle)
 
 
 <br>
