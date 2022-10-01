@@ -33,7 +33,7 @@
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
     .rank-text {
-      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #7fdbca; 
+      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #7fdbca;
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
     
@@ -43,7 +43,7 @@
       fill: #ffeb95;
       display: block;
     }
-    
+
     .rank-circle-rim {
       stroke: #c792ea;
       fill: none;
