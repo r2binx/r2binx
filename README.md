@@ -3,7 +3,8 @@
 #### :eyes: About me
 
 - 👨‍🎓 I'm a CS student at Stuttgart Media University
-- 🌱 I’m currently learning about cloud development & Go
+- 🧑‍💻 Interning at IBM
+- 🌱 Currently learning about cloud development & Go
 - 🐧 I love open source
 - 🤓 VIM is my favorite _text editor_ but I wouldn't use it as an IDE
 
