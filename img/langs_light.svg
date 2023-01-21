@@ -20,7 +20,38 @@
             /* Selector detects Firefox */
             .header { font-size: 15.5px; }
           }
-          .lang-name { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: #363636 }
+          
+    @keyframes slideInAnimation {
+      from {
+        width: 0;
+      }
+      to {
+        width: calc(100%-100px);
+      }
+    }
+    @keyframes growWidthAnimation {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    .lang-name {
+      font: 400 11px "Segoe UI", Ubuntu, Sans-Serif;
+      fill: #363636;
+    }
+    .stagger {
+      opacity: 0;
+      animation: fadeInAnimation 0.3s ease-in-out forwards;
+    }
+    #rect-mask rect{
+      animation: slideInAnimation 1s ease-in-out forwards;
+    }
+    .lang-progress{
+      animation: growWidthAnimation 0.6s ease-in-out forwards;
+    }
+    
 
           
     /* Animations */
@@ -41,7 +72,7 @@
       }
     }
   
-          * { animation-duration: 0s !important; animation-delay: 0s !important; }
+          
         </style>
 
         
@@ -82,7 +113,7 @@
     <svg data-testid="lang-items" x="25">
       
     <mask id="rect-mask">
-      <rect x="0" y="0" width="300" height="8" fill="white" rx="5" />
+      <rect x="0" y="0" width="300" height="8" fill="white" rx="5"/>
     </mask>
     
         <rect
@@ -90,37 +121,7 @@
           data-testid="lang-progress"
           x="0"
           y="0"
-          width="101.87"
-          height="8"
-          fill="#3572A5"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="101.87"
-          y="0"
-          width="86.97"
-          height="8"
-          fill="#41b883"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="188.84"
-          y="0"
-          width="49.07"
-          height="8"
-          fill="#f1e05a"
-        />
-      
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="237.91"
-          y="0"
-          width="33.87"
+          width="85.09"
           height="8"
           fill="#89e051"
         />
@@ -128,48 +129,78 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="271.78"
+          x="85.09"
           y="0"
-          width="28.22"
+          width="73.43"
           height="8"
-          fill="#00ADD8"
+          fill="#3572A5"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="158.52"
+          y="0"
+          width="62.69"
+          height="8"
+          fill="#41b883"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="221.21"
+          y="0"
+          width="43.41"
+          height="8"
+          fill="#000080"
+        />
+      
+        <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="264.62"
+          y="0"
+          width="35.37"
+          height="8"
+          fill="#f1e05a"
         />
       
 
     <g transform="translate(0, 25)">
       <g transform="translate(0, 0)"><g transform="translate(0, 0)">
-    <g>
-      <circle cx="5" cy="6" r="5" fill="#3572A5" />
+    <g class="stagger" style="animation-delay: 450ms">
+      <circle cx="5" cy="6" r="5" fill="#89e051" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Python 33.96%
+        Shell 28.36%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
-    <g>
-      <circle cx="5" cy="6" r="5" fill="#41b883" />
+    <g class="stagger" style="animation-delay: 600ms">
+      <circle cx="5" cy="6" r="5" fill="#3572A5" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Vue 28.99%
+        Python 24.48%
       </text>
     </g>
   </g><g transform="translate(0, 50)">
-    <g>
-      <circle cx="5" cy="6" r="5" fill="#f1e05a" />
+    <g class="stagger" style="animation-delay: 750ms">
+      <circle cx="5" cy="6" r="5" fill="#41b883" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        JavaScript 16.36%
+        Vue 20.90%
       </text>
     </g>
   </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
-    <g>
-      <circle cx="5" cy="6" r="5" fill="#89e051" />
+    <g class="stagger" style="animation-delay: 450ms">
+      <circle cx="5" cy="6" r="5" fill="#000080" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Shell 11.29%
+        Lua 14.47%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
-    <g>
-      <circle cx="5" cy="6" r="5" fill="#00ADD8" />
+    <g class="stagger" style="animation-delay: 600ms">
+      <circle cx="5" cy="6" r="5" fill="#f1e05a" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Go 9.41%
+        JavaScript 11.79%
       </text>
     </g>
   </g></g>
