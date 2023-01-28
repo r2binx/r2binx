@@ -1,8 +1,8 @@
 
       <svg
-        width="495"
+        width="467"
         height="195"
-        viewBox="0 0 495 195"
+        viewBox="0 0 467 195"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
@@ -67,7 +67,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 125.79348745534217;
+        stroke-dashoffset: 125.72903092979494;
       }
     }
   
@@ -104,7 +104,7 @@
           rx="4.5"
           height="99%"
           stroke="#e4e2e2"
-          width="494"
+          width="466"
           fill="#011627"
           stroke-opacity="0"
         />
@@ -131,7 +131,7 @@
         >
           
     <g data-testid="rank-circle"
-          transform="translate(400, 47.5)">
+          transform="translate(390.5, 47.5)">
         <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
         <circle class="rank-circle" cx="-10" cy="8" r="40" />
         <g class="rank-text">
@@ -175,7 +175,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >258</text>
+      >267</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
